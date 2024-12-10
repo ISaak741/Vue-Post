@@ -1,29 +1,15 @@
-# 04-vue-first-spa
+# VuePost
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple SPA built with Vue.js to manage posts, using JSON Server as a mock backend. This project demonstrates Vue.js features like components, routing, and state management.
 
-## Recommended IDE Setup
+## Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Clone the repository, navigate to the directory, create a `db.json` file, and start the project:
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
+git clone https://github.com/ISaak741/Vue-Post.git
+cd Vue-Post
+echo '{ "posts": [] }' > db.json
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+npm run json-serve
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
