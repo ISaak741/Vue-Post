@@ -4,7 +4,7 @@ import axios from 'axios';
 import Post from '@/components/Post.vue';
 
 const posts = ref([])
-const initialPostLimit = ref(3)
+const initialPostLimit = ref(0)
 
 const showMorePosts = () => {
     if (initialPostLimit.value + 3 > posts.value.length)
@@ -23,6 +23,7 @@ const numbers = computed(() => {
 
 axios.get('http://127.0.0.1:7000/posts').then(response => {
     posts.value = response.data
+    initialPostLimit.value = (posts.value.length > 3) ? 3 : posts.value.length
 })
 
 

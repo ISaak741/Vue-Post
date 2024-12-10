@@ -105,7 +105,7 @@ const submitForm = () => {
                 <!-- Submit Button -->
                 <div class="text-center">
                     <button type="submit" v-bind:disabled="!allowSubmit"
-                        v-bind:class="[allowSubmit == false ? 'cursor-not-allowed bg-blue-400' : 'hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75', 'px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md']">
+                        v-bind:class="[allowSubmit == false ? 'cursor-not-allowed bg-blue-400' : 'hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75', 'px-6 py-2 text-white font-semibold rounded-lg shadow-md']">
                         Create Post
                     </button>
                 </div>
