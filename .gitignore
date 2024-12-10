@@ -16,7 +16,7 @@ coverage
 db.json
 /cypress/videos/
 /cypress/screenshots/
-
+/src/views/Test*.vue
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
