@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import PostView from "@/views/PostView.vue";
 import AddPostView from "@/views/AddPostView.vue";
-import TestView from "@/views/TestView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,11 +15,6 @@ const router = createRouter({
       path: "/posts/add",
       name: "post-add",
       component: AddPostView,
-    },
-    {
-      path: "/test",
-      name: "test",
-      component: TestView,
     },
     {
       path: "/posts/:id",
